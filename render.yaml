@@ -11,10 +11,8 @@ services:
       - key: JWT_SECRET
         generateValue: true
       - key: DEV_ALLOW_ALL
-        value: "true"          # bypass subscription for testing
+        value: "true"
       - key: TEST_EMAIL
         value: test@example.com
-    disk:
-      name: paywise-data
-      mountPath: /opt/render/project/src/data
-      sizeGB: 1
+      - key: OUT_DIR
+        value: /tmp/paywise-data
