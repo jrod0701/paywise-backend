@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paywise — Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <div class="max-w-6xl mx-auto p-6">
+    <div class="flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <div class="h-10 w-10 rounded-2xl bg-indigo-600/90 shadow-md"></div>
+        <div>
+          <h1 class="text-xl font-semibold">Paywise</h1>
+          <p class="text-sm text-slate-500">Merge Mindbody payroll & commission detail reports</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-2">
+        <button id="logout" class="px-3 py-2 text-sm rounded-xl bg-slate-900 text-white">Sign out</button>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
+      <div class="lg:col-span-1 space-y-6">
+        <section class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <h3 class="font-semibold">Subscription</h3>
+          <div class="flex gap-2 mt-2">
+            <button id="checkStatus" class="px-3 py-2 text-sm rounded-xl bg-slate-900 text-white">Check</button>
+            <button id="startSub" class="px-3 py-2 text-sm rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white">Subscribe</button>
+            <span id="subStatus" class="text-sm text-slate-500 self-center">Not checked.</span>
+          </div>
+        </section>
+      </div>
+
+      <div class="lg:col-span-2 space-y-6">
+        <section class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <h3 class="font-semibold">Upload & Merge</h3>
+          <p class="text-sm text-slate-500">Upload the <b>detail</b> versions of Mindbody Payroll and Commission reports.</p>
+
+          <form id="ingestForm" class="mt-3 space-y-4">
+            <div class="grid md:grid-cols-3 gap-3">
+              <div>
+                <label class="text-xs text-slate-500">Location (optional)</label>
+                <input name="location" placeholder="e.g., Studio 14" class="mt-1 w-full rounded-xl border border-slate-300 bg-white px-3 py-2">
+              </div>
+              <div>
+                <label class="text-xs text-slate-500">Payroll Detail (.xls/.xlsx/.csv)</label>
+                <input name="payroll" type="file" accept=".xls,.xlsx,.csv" required class="mt-1 w-full rounded-xl border border-slate-300 bg-white px-3 py-2">
+              </div>
+              <div>
+                <label class="text-xs text-slate-500">Commission Detail (.xls/.xlsx/.csv)</label>
+                <input name="commission" type="file" accept=".xls,.xlsx,.csv" required class="mt-1 w-full rounded-xl border border-slate-300 bg-white px-3 py-2">
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <button class="rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2">Ingest & Merge</button>
+              <span id="rowsMeta" class="text-xs text-slate-500"></span>
+            </div>
+          </form>
+        </section>
+
+        <div id="result" class="space-y-6"></div>
+      </div>
+    </div>
+  </div>
+
+<script>
+let token = localStorage.getItem('token') || '';
+const fmt = new Intl.NumberFormat(undefined, { style:'currency', currency:'USD' });
+function $(sel){ return document.querySelector(sel); }
+function el(html){ const t=document.createElement('template'); t.innerHTML=html.trim(); return t.content.firstChild; }
+function setSubStatus(msg){ $('#subStatus').textContent = msg; }
+
+$('#logout').addEventListener('click', ()=>{ localStorage.removeItem('token'); location.href='/'; });
+$('#checkStatus').addEventListener('click', async ()=>{
+  const res = await fetch('/billing/status', {headers:{'Authorization':'Bearer '+token}});
+  const data = await res.json();
+  setSubStatus(res.ok ? 'Subscription: '+data.subscription_status : 'Not authorized / not logged in.');
+});
+$('#startSub').addEventListener('click', async ()=>{
+  const res = await fetch('/billing/create-checkout-session', {method:'POST', headers:{'Authorization':'Bearer '+token}});
+  const data = await res.json();
+  if(res.ok && data.checkout_url) window.location = data.checkout_url;
+  else alert(data.detail || 'Stripe not configured.');
+});
+$('#ingestForm').addEventListener('submit', async (e)=>{
+  e.preventDefault();
+  const fd = new FormData(e.target);
+  const res = await fetch('/ingest', {method:'POST', headers:{'Authorization':'Bearer '+token}, body: fd});
+  const result = $('#result');
+  let data;
+  try{ data = await res.json(); }catch(_){ data = { detail: 'Request failed' }; }
+  if(!res.ok){
+    result.innerHTML = `<div class="rounded-xl border border-red-200 bg-red-50 text-red-800 p-4">Error: ${data.detail||'Request failed'}</div>`;
+    return;
+  }
+  const empTotals = data.employee_totals || [];
+  const grand = data.grand_totals || {};
+  $('#rowsMeta').textContent = `Merged: ${data.rows_merged} — Payroll: ${data.rows_payroll} / Commission: ${data.rows_commission}`;
+  let html = '';
+  html += `
+   <section class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+    <h3 class="font-semibold mb-3">Summary</h3>
+    <div class="grid sm:grid-cols-3 gap-3">
+      <div class="rounded-xl bg-indigo-50 p-4">
+        <div class="text-xs text-slate-500">Payroll</div>
+        <div class="text-lg font-semibold">${fmt.format(Number(grand.payroll_total||0))}</div>
+      </div>
+      <div class="rounded-xl bg-emerald-50 p-4">
+        <div class="text-xs text-slate-500">Commission</div>
+        <div class="text-lg font-semibold">${fmt.format(Number(grand.commission_total||0))}</div>
+      </div>
+      <div class="rounded-xl bg-slate-100 p-4">
+        <div class="text-xs text-slate-500">Total</div>
+        <div class="text-lg font-semibold">${fmt.format(Number(grand.combined_total||0))}</div>
+      </div>
+    </div>
+
+    <div class="mt-4 flex items-center gap-4 text-sm">
+      ${data.employee_totals_url ? `<a class="underline" target="_blank" href="${location.origin}${data.employee_totals_url}" download>Download employee_totals.csv</a>` : ''}
+      ${data.download_url ? `<a class="underline" target="_blank" href="${location.origin}${data.download_url}" download>Download merged_normalized.csv</a>` : ''}
+    </div>
+  </section>`;
+  html += `
+  <section class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+    <div class="flex items-center justify-between mb-3">
+      <h3 class="font-semibold">Per-Employee Totals</h3>
+      <input id="empFilter" placeholder="Filter by name..." class="text-sm rounded-xl border border-slate-300 bg-white px-3 py-2">
+    </div>
+    <div class="overflow-auto max-h-[420px]">
+      <table class="min-w-full text-sm">
+        <thead class="sticky top-0 bg-white">
+          <tr class="text-left text-slate-500">
+            <th class="py-2 pr-3">Employee ID</th>
+            <th class="py-2 pr-3">Employee Name</th>
+            <th class="py-2 pr-3 text-right">Payroll</th>
+            <th class="py-2 pr-3 text-right">Commission</th>
+            <th class="py-2 text-right">Total</th>
+          </tr>
+        </thead>
+        <tbody id="empTbody"></tbody>
+      </table>
+    </div>
+  </section>`;
+  html += `
+  <section class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+    <h3 class="font-semibold mb-2">Employee Breakdown</h3>
+    <div id="breakdowns" class="space-y-2"></div>
+  </section>`;
+  result.innerHTML = html;
+  const tbody = document.getElementById('empTbody');
+  const rows = empTotals.map(r => ({ id: r.employee_id ?? '', name: r.employee_name ?? '', payroll: Number(r.payroll_total||0), commission: Number(r.commission_total||0), total: Number(r.combined_total||0) }));
+  function elrow(r){ return `<tr class="border-b border-slate-100"><td class="py-2 pr-3">${r.id}</td><td class="py-2 pr-3">${r.name}</td><td class="py-2 pr-3 text-right">${fmt.format(r.payroll)}</td><td class="py-2 pr-3 text-right">${fmt.format(r.commission)}</td><td class="py-2 text-right font-semibold">${fmt.format(r.total)}</td></tr>`; }
+  function renderRows(filter=''){ tbody.innerHTML = rows.filter(r => r.name.toLowerCase().includes(filter.toLowerCase())).map(elrow).join(''); }
+  renderRows();
+  document.getElementById('empFilter').addEventListener('input', (e)=>renderRows(e.target.value));
+  const holder = document.getElementById('breakdowns');
+  (data.employee_breakdowns||[]).forEach(b=>{
+    const title = (b.employee_name || b.employee_id || 'Employee');
+    const table = (b.rows||[]).map(r=>{
+      const lt = Number(r.line_total||0);
+      return `<tr class="border-b border-slate-100"><td class="py-1 pr-3">${r.source||''}</td><td class="py-1 pr-3">${r.date||''}</td><td class="py-1 pr-3">${r.pay_component||''}</td><td class="py-1 pr-3">${r.notes||''}</td><td class="py-1 pr-3 text-right">${r.gross_amount||''}</td><td class="py-1 pr-3 text-right">${r.net_amount||''}</td><td class="py-1 pr-3 text-right">${r.commission_amount||''}</td><td class="py-1 text-right font-medium">${fmt.format(lt)}</td></tr>`;
+    }).join('');
+    holder.insertAdjacentHTML('beforeend', `<details class="rounded-xl border border-slate-200 bg-white p-3"><summary class="cursor-pointer flex items-center justify-between"><span class="font-medium">${title}</span><span class="text-xs text-slate-500">${b.rows_count} line(s)</span></summary><div class="overflow-auto max-h-80 mt-2"><table class="min-w-full text-xs"><thead class="text-slate-500"><tr><th class="text-left py-1 pr-3">Source</th><th class="text-left py-1 pr-3">Date</th><th class="text-left py-1 pr-3">Component</th><th class="text-left py-1 pr-3">Notes</th><th class="text-right py-1 pr-3">Gross</th><th class="text-right py-1 pr-3">Net</th><th class="text-right py-1 pr-3">Commission</th><th class="text-right py-1">Line Total</th></tr></thead><tbody>${table}</tbody></table></div></details>`);
+  });
+});
+</script>
+</body>
+</html>

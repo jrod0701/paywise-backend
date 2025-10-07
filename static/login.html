@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Paywise — Sign in</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-slate-50 flex items-center justify-center">
+  <div class="w-full max-w-md bg-white shadow-lg rounded-2xl p-6 border border-slate-200">
+    <h1 class="text-xl font-semibold mb-2">Paywise</h1>
+    <p class="text-sm text-slate-500 mb-4">Sign up or log in. Subscriptions required — unless you’re the test user.</p>
+
+    <div id="msg" class="text-xs text-slate-500 mb-3"></div>
+
+    <div class="space-y-4">
+      <form id="registerForm" class="space-y-2">
+        <div class="text-sm font-medium">Register</div>
+        <input name="email" type="email" placeholder="Email" class="w-full border rounded-xl px-3 py-2"/>
+        <input name="password" type="password" placeholder="Password" class="w-full border rounded-xl px-3 py-2"/>
+        <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl py-2">Create account</button>
+      </form>
+
+      <form id="loginForm" class="space-y-2">
+        <div class="text-sm font-medium">Login</div>
+        <input name="email" type="email" placeholder="Email" class="w-full border rounded-xl px-3 py-2"/>
+        <input name="password" type="password" placeholder="Password" class="w-full border rounded-xl px-3 py-2"/>
+        <button class="w-full bg-slate-900 hover:bg-black text-white rounded-xl py-2">Sign in</button>
+      </form>
+
+      <div class="flex items-center justify-between">
+        <button id="signOutLanding" class="text-sm underline">Sign out</button>
+        <div class="space-x-4">
+          <button id="checkStatus" class="text-sm underline">Check subscription</button>
+          <button id="startSub" class="text-sm underline">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+let token = localStorage.getItem('token') || '';
+function setMsg(x){ document.getElementById('msg').textContent = x; }
+async function goIfActive(){
+  if(!token) return;
+  try{
+    const r = await fetch('/billing/status', { headers:{ Authorization:'Bearer '+token }});
+    if(r.ok){
+      const j = await r.json();
+      if(j.subscription_status === 'active'){ location.href = '/app'; }
+      else setMsg('Logged in. Subscription not active yet.');
+    }else{
+      setMsg('Please log in.');
+    }
+  }catch(e){ setMsg('Network error.'); }
+}
+document.getElementById('registerForm').addEventListener('submit', async e=>{
+  e.preventDefault();
+  const fd = new FormData(e.target);
+  const r = await fetch('/auth/register', {
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({ email:fd.get('email'), password:fd.get('password') })
+  });
+  setMsg(r.ok ? 'Registered — now log in.' : 'Registration failed.');
+});
+document.getElementById('loginForm').addEventListener('submit', async e=>{
+  e.preventDefault();
+  const fd = new FormData(e.target);
+  const r = await fetch('/auth/login', {
+    method:'POST',
+    headers:{'Content-Type':'application/x-www-form-urlencoded','Accept':'application/json'},
+    body: new URLSearchParams({ username:fd.get('email'), password:fd.get('password') })
+  });
+  const j = await r.json().catch(()=>({}));
+ if(r.ok && j.access_token){
+  token = j.access_token;
+  localStorage.setItem('token', token);
+  // Let the backend guard access; just go to /app.
+  location.href = '/app';
+}else{
+  setMsg('Login failed.');
+}
+});
+document.getElementById('checkStatus').addEventListener('click', goIfActive);
+document.getElementById('startSub').addEventListener('click', async ()=>{
+  if(!token){ setMsg('Log in first.'); return; }
+  const r = await fetch('/billing/create-checkout-session', { method:'POST', headers:{ Authorization:'Bearer '+token }});
+  const j = await r.json().catch(()=>({}));
+  if(r.ok && j.checkout_url) location = j.checkout_url;
+  else setMsg(j.detail || 'Stripe not configured.');
+});
+document.getElementById('signOutLanding').addEventListener('click', ()=>{
+  localStorage.removeItem('token');
+  setMsg('Signed out.');
+});
+goIfActive();
+</script>
+</body>
+</html>

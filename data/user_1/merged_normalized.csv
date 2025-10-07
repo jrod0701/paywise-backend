@@ -1,0 +1,398 @@
+employee_id,employee_name,date,location,source,pay_component,gross_amount,net_amount,commission_pct,commission_amount,tips,bonus,notes,original_row_id,original_source_file
+,"1, Lash Artist","Monday, September 22, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,R. Waters,0,payroll_detail.csv
+,"1, Lash Artist",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,1,payroll_detail.csv
+,"1, Lash Artist",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,2,payroll_detail.csv
+,"Alvarez, Ines","Wednesday, October 1, 2025",,payroll,appointment,15.0,15.0,0.0,0.0,0.0,0.0,N. USR,3,payroll_detail.csv
+,"Alvarez, Ines",,,payroll,appointment,15.0,15.0,0.0,0.0,0.0,0.0,,4,payroll_detail.csv
+,"Alvarez, Ines",Tips:,,payroll,appointment,0.0,100.0,0.0,0.0,0.0,0.0,,5,payroll_detail.csv
+,"Alvarez, Ines",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,6,payroll_detail.csv
+,"Artist #1, Lash","Tuesday, September 23, 2025",,payroll,appointment,0.0,18.0,0.0,0.0,0.0,0.0,,7,payroll_detail.csv
+,"Artist #1, Lash",,,payroll,appointment,0.0,18.0,0.0,0.0,0.0,0.0,,8,payroll_detail.csv
+,"Artist #1, Lash",Tips:,,payroll,appointment,0.0,10.0,0.0,0.0,0.0,0.0,,9,payroll_detail.csv
+,"Artist #1, Lash",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,10,payroll_detail.csv
+,"Artist #2, Lash","Friday, October 3, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,S. Maine,11,payroll_detail.csv
+,"Artist #2, Lash","Friday, October 3, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,S. Maine,12,payroll_detail.csv
+,"Artist #2, Lash","Friday, October 3, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,S. Maine,13,payroll_detail.csv
+,"Artist #2, Lash",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,14,payroll_detail.csv
+,"Artist #2, Lash",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,15,payroll_detail.csv
+,"Astley-Davis, Abbey","Friday, October 3, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,S. Maine,16,payroll_detail.csv
+,"Astley-Davis, Abbey","Friday, October 3, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,S. Maine,17,payroll_detail.csv
+,"Astley-Davis, Abbey","Friday, October 3, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,S. Maine,18,payroll_detail.csv
+,"Astley-Davis, Abbey",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,19,payroll_detail.csv
+,"Astley-Davis, Abbey",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,20,payroll_detail.csv
+,"Astley-Davis, Abbey","Total for Artist #2, Lash",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,21,payroll_detail.csv
+,"Astley-Davis, Abbey","Astley-Davis, Abbey",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,22,payroll_detail.csv
+,"Astley-Davis, Abbey",Tips:,,payroll,appointment,0.0,10.0,0.0,0.0,0.0,0.0,,23,payroll_detail.csv
+,"Astley-Davis, Abbey",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,24,payroll_detail.csv
+,"Breska, Brittany","Thursday, September 25, 2025",,payroll,appointment,15.0,15.0,0.0,0.0,0.0,0.0,T. Model 1,25,payroll_detail.csv
+,"Breska, Brittany",,,payroll,appointment,15.0,15.0,0.0,0.0,0.0,0.0,,26,payroll_detail.csv
+,"Breska, Brittany",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,27,payroll_detail.csv
+,"Burke, Chatsiri","Thursday, September 25, 2025",,payroll,appointment,15.0,15.0,0.0,0.0,0.0,0.0,T. Model 1,28,payroll_detail.csv
+,"Burke, Chatsiri",,,payroll,appointment,15.0,15.0,0.0,0.0,0.0,0.0,,29,payroll_detail.csv
+,"Burke, Chatsiri",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,30,payroll_detail.csv
+,"Burke, Chatsiri","Total for Breska, Brittany",,payroll,appointment,0.0,30.0,0.0,0.0,0.0,0.0,,31,payroll_detail.csv
+,"Burke, Chatsiri","Burke, Chatsiri",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,32,payroll_detail.csv
+,"Burke, Chatsiri",Hourly Pay (0.0025 hours @ $0.00/hr):,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,33,payroll_detail.csv
+,"Burke, Chatsiri",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,34,payroll_detail.csv
+,"Bush, Jasmine","Thursday, September 25, 2025",,payroll,appointment,15.0,15.0,0.0,0.0,0.0,0.0,T. Model 1,35,payroll_detail.csv
+,"Bush, Jasmine",,,payroll,appointment,15.0,15.0,0.0,0.0,0.0,0.0,,36,payroll_detail.csv
+,"Bush, Jasmine",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,37,payroll_detail.csv
+,"Bush, Jasmine","Total for Breska, Brittany",,payroll,appointment,0.0,30.0,0.0,0.0,0.0,0.0,,38,payroll_detail.csv
+,"Bush, Jasmine","Burke, Chatsiri",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,39,payroll_detail.csv
+,"Bush, Jasmine",Hourly Pay (0.0025 hours @ $0.00/hr):,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,40,payroll_detail.csv
+,"Bush, Jasmine",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,41,payroll_detail.csv
+,"Bush, Jasmine","Total for Burke, Chatsiri",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,42,payroll_detail.csv
+,"Bush, Jasmine","Bush, Jasmine",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,43,payroll_detail.csv
+,"Bush, Jasmine",Hourly Pay (0 hours @ $0.00/hr):,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,44,payroll_detail.csv
+,"Bush, Jasmine",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,45,payroll_detail.csv
+,"Carey, Cassidy","Thursday, September 25, 2025",,payroll,appointment,15.0,15.0,0.0,0.0,0.0,0.0,T. Model 1,46,payroll_detail.csv
+,"Carey, Cassidy",,,payroll,appointment,15.0,15.0,0.0,0.0,0.0,0.0,,47,payroll_detail.csv
+,"Carey, Cassidy",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,48,payroll_detail.csv
+,"Carey, Cassidy","Total for Breska, Brittany",,payroll,appointment,0.0,30.0,0.0,0.0,0.0,0.0,,49,payroll_detail.csv
+,"Carey, Cassidy","Burke, Chatsiri",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,50,payroll_detail.csv
+,"Carey, Cassidy",Hourly Pay (0.0025 hours @ $0.00/hr):,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,51,payroll_detail.csv
+,"Carey, Cassidy",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,52,payroll_detail.csv
+,"Carey, Cassidy","Total for Burke, Chatsiri",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,53,payroll_detail.csv
+,"Carey, Cassidy","Bush, Jasmine",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,54,payroll_detail.csv
+,"Carey, Cassidy",Hourly Pay (0 hours @ $0.00/hr):,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,55,payroll_detail.csv
+,"Carey, Cassidy",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,56,payroll_detail.csv
+,"Carey, Cassidy","Total for Bush, Jasmine",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,57,payroll_detail.csv
+,"Carey, Cassidy","Carey, Cassidy",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,58,payroll_detail.csv
+,"Carey, Cassidy",Tips:,,payroll,appointment,0.0,20.0,0.0,0.0,0.0,0.0,,59,payroll_detail.csv
+,"Carey, Cassidy",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,60,payroll_detail.csv
+,"Chhon, Chhoryna","Wednesday, October 1, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,J. Trapasso,61,payroll_detail.csv
+,"Chhon, Chhoryna",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,62,payroll_detail.csv
+,"Chhon, Chhoryna",Commission:,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,63,payroll_detail.csv
+,"Chhon, Chhoryna",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,64,payroll_detail.csv
+,"Chu, Cait","Wednesday, October 1, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,J. Trapasso,65,payroll_detail.csv
+,"Chu, Cait",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,66,payroll_detail.csv
+,"Chu, Cait",Commission:,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,67,payroll_detail.csv
+,"Chu, Cait",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,68,payroll_detail.csv
+,"Chu, Cait","Total for Chhon, Chhoryna",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,69,payroll_detail.csv
+,"Chu, Cait","Chu, Cait",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,70,payroll_detail.csv
+,"Chu, Cait",Hourly Pay (0.0108 hours @ $0.00/hr):,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,71,payroll_detail.csv
+,"Chu, Cait",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,72,payroll_detail.csv
+,"Collier, Alisha","Wednesday, October 1, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,J. Trapasso,73,payroll_detail.csv
+,"Collier, Alisha",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,74,payroll_detail.csv
+,"Collier, Alisha",Commission:,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,75,payroll_detail.csv
+,"Collier, Alisha",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,76,payroll_detail.csv
+,"Collier, Alisha","Total for Chhon, Chhoryna",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,77,payroll_detail.csv
+,"Collier, Alisha","Chu, Cait",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,78,payroll_detail.csv
+,"Collier, Alisha",Hourly Pay (0.0108 hours @ $0.00/hr):,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,79,payroll_detail.csv
+,"Collier, Alisha",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,80,payroll_detail.csv
+,"Collier, Alisha","Total for Chu, Cait",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,81,payroll_detail.csv
+,"Collier, Alisha","Collier, Alisha",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,82,payroll_detail.csv
+,"Collier, Alisha",Tips:,,payroll,appointment,0.0,30.0,0.0,0.0,0.0,0.0,,83,payroll_detail.csv
+,"Collier, Alisha",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,84,payroll_detail.csv
+,"Collier, Brad","Wednesday, October 1, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,J. Trapasso,85,payroll_detail.csv
+,"Collier, Brad",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,86,payroll_detail.csv
+,"Collier, Brad",Commission:,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,87,payroll_detail.csv
+,"Collier, Brad",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,88,payroll_detail.csv
+,"Collier, Brad","Total for Chhon, Chhoryna",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,89,payroll_detail.csv
+,"Collier, Brad","Chu, Cait",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,90,payroll_detail.csv
+,"Collier, Brad",Hourly Pay (0.0108 hours @ $0.00/hr):,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,91,payroll_detail.csv
+,"Collier, Brad",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,92,payroll_detail.csv
+,"Collier, Brad","Total for Chu, Cait",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,93,payroll_detail.csv
+,"Collier, Brad","Collier, Alisha",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,94,payroll_detail.csv
+,"Collier, Brad",Tips:,,payroll,appointment,0.0,30.0,0.0,0.0,0.0,0.0,,95,payroll_detail.csv
+,"Collier, Brad",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,96,payroll_detail.csv
+,"Collier, Brad","Total for Collier, Alisha",,payroll,appointment,0.0,30.0,0.0,0.0,0.0,0.0,,97,payroll_detail.csv
+,"Collier, Brad","Collier, Brad",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,98,payroll_detail.csv
+,"Collier, Brad",Tips:,,payroll,appointment,0.0,50.0,0.0,0.0,0.0,0.0,,99,payroll_detail.csv
+,"Collier, Brad",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,100,payroll_detail.csv
+,"Counts, Ashley","Wednesday, October 1, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,J. Trapasso,101,payroll_detail.csv
+,"Counts, Ashley",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,102,payroll_detail.csv
+,"Counts, Ashley",Commission:,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,103,payroll_detail.csv
+,"Counts, Ashley",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,104,payroll_detail.csv
+,"Counts, Ashley","Total for Chhon, Chhoryna",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,105,payroll_detail.csv
+,"Counts, Ashley","Chu, Cait",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,106,payroll_detail.csv
+,"Counts, Ashley",Hourly Pay (0.0108 hours @ $0.00/hr):,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,107,payroll_detail.csv
+,"Counts, Ashley",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,108,payroll_detail.csv
+,"Counts, Ashley","Total for Chu, Cait",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,109,payroll_detail.csv
+,"Counts, Ashley","Collier, Alisha",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,110,payroll_detail.csv
+,"Counts, Ashley",Tips:,,payroll,appointment,0.0,30.0,0.0,0.0,0.0,0.0,,111,payroll_detail.csv
+,"Counts, Ashley",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,112,payroll_detail.csv
+,"Counts, Ashley","Total for Collier, Alisha",,payroll,appointment,0.0,30.0,0.0,0.0,0.0,0.0,,113,payroll_detail.csv
+,"Counts, Ashley","Collier, Brad",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,114,payroll_detail.csv
+,"Counts, Ashley",Tips:,,payroll,appointment,0.0,50.0,0.0,0.0,0.0,0.0,,115,payroll_detail.csv
+,"Counts, Ashley",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,116,payroll_detail.csv
+,"Counts, Ashley","Total for Collier, Brad",,payroll,appointment,0.0,50.0,0.0,0.0,0.0,0.0,,117,payroll_detail.csv
+,"Counts, Ashley","Counts, Ashley",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,118,payroll_detail.csv
+,"Counts, Ashley",Tips:,,payroll,appointment,0.0,20.0,0.0,0.0,0.0,0.0,,119,payroll_detail.csv
+,"Counts, Ashley",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,120,payroll_detail.csv
+,"Cruz, Carmen","Wednesday, October 1, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,J. Trapasso,121,payroll_detail.csv
+,"Cruz, Carmen",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,122,payroll_detail.csv
+,"Cruz, Carmen",Commission:,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,123,payroll_detail.csv
+,"Cruz, Carmen",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,124,payroll_detail.csv
+,"Cruz, Carmen","Total for Chhon, Chhoryna",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,125,payroll_detail.csv
+,"Cruz, Carmen","Chu, Cait",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,126,payroll_detail.csv
+,"Cruz, Carmen",Hourly Pay (0.0108 hours @ $0.00/hr):,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,127,payroll_detail.csv
+,"Cruz, Carmen",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,128,payroll_detail.csv
+,"Cruz, Carmen","Total for Chu, Cait",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,129,payroll_detail.csv
+,"Cruz, Carmen","Collier, Alisha",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,130,payroll_detail.csv
+,"Cruz, Carmen",Tips:,,payroll,appointment,0.0,30.0,0.0,0.0,0.0,0.0,,131,payroll_detail.csv
+,"Cruz, Carmen",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,132,payroll_detail.csv
+,"Cruz, Carmen","Total for Collier, Alisha",,payroll,appointment,0.0,30.0,0.0,0.0,0.0,0.0,,133,payroll_detail.csv
+,"Cruz, Carmen","Collier, Brad",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,134,payroll_detail.csv
+,"Cruz, Carmen",Tips:,,payroll,appointment,0.0,50.0,0.0,0.0,0.0,0.0,,135,payroll_detail.csv
+,"Cruz, Carmen",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,136,payroll_detail.csv
+,"Cruz, Carmen","Total for Collier, Brad",,payroll,appointment,0.0,50.0,0.0,0.0,0.0,0.0,,137,payroll_detail.csv
+,"Cruz, Carmen","Counts, Ashley",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,138,payroll_detail.csv
+,"Cruz, Carmen",Tips:,,payroll,appointment,0.0,20.0,0.0,0.0,0.0,0.0,,139,payroll_detail.csv
+,"Cruz, Carmen",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,140,payroll_detail.csv
+,"Cruz, Carmen","Total for Counts, Ashley",,payroll,appointment,0.0,20.0,0.0,0.0,0.0,0.0,,141,payroll_detail.csv
+,"Cruz, Carmen","Cruz, Carmen",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,142,payroll_detail.csv
+,"Cruz, Carmen",Commission:,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,143,payroll_detail.csv
+,"Cruz, Carmen",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,144,payroll_detail.csv
+,"Darby, Elizabeth","Saturday, September 27, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,K. Flatford,145,payroll_detail.csv
+,"Darby, Elizabeth",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,146,payroll_detail.csv
+,"Darby, Elizabeth",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,147,payroll_detail.csv
+,"Dettman, Libby (MLA)","Friday, September 26, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,T. Ballantyne 2,148,payroll_detail.csv
+,"Dettman, Libby (MLA)",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,149,payroll_detail.csv
+,"Dettman, Libby (MLA)",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,150,payroll_detail.csv
+,"Ellis, Emma","Monday, September 29, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,A. Bevan,151,payroll_detail.csv
+,"Ellis, Emma",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,152,payroll_detail.csv
+,"Ellis, Emma",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,153,payroll_detail.csv
+,"Fox, Alissa","Tuesday, September 30, 2025",,payroll,appointment,0.0,1.6,0.0,0.0,0.0,0.0,,154,payroll_detail.csv
+,"Fox, Alissa","Thursday, October 2, 2025",,payroll,appointment,0.0,1.6,0.0,0.0,0.0,0.0,,155,payroll_detail.csv
+,"Fox, Alissa",,,payroll,appointment,0.0,3.2,0.0,0.0,0.0,0.0,,156,payroll_detail.csv
+,"Fox, Alissa",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,157,payroll_detail.csv
+,"Gilmore, Tae","Friday, September 26, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,S. Gardner,158,payroll_detail.csv
+,"Gilmore, Tae",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,159,payroll_detail.csv
+,"Gilmore, Tae",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,160,payroll_detail.csv
+,"Green, Genevieve","Monday, September 29, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,C. San miguel,161,payroll_detail.csv
+,"Green, Genevieve",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,162,payroll_detail.csv
+,"Green, Genevieve",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,163,payroll_detail.csv
+,"Hernandez, Rena","Monday, September 29, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,C. San miguel,164,payroll_detail.csv
+,"Hernandez, Rena",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,165,payroll_detail.csv
+,"Hernandez, Rena",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,166,payroll_detail.csv
+,"Hernandez, Rena","Total for Green, Genevieve",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,167,payroll_detail.csv
+,"Hernandez, Rena","Hernandez, Rena",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,168,payroll_detail.csv
+,"Hernandez, Rena",Commission:,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,169,payroll_detail.csv
+,"Hernandez, Rena",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,170,payroll_detail.csv
+,"Hinkley, Cassie","Friday, September 26, 2025",,payroll,appointment,15.0,15.0,0.0,0.0,0.0,0.0,S. Gardner,171,payroll_detail.csv
+,"Hinkley, Cassie",,,payroll,appointment,15.0,15.0,0.0,0.0,0.0,0.0,,172,payroll_detail.csv
+,"Hinkley, Cassie",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,173,payroll_detail.csv
+,"Jergenson, Autumn","Friday, September 26, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,J. Trapasso,174,payroll_detail.csv
+,"Jergenson, Autumn","Friday, September 26, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,J. Trapasso,175,payroll_detail.csv
+,"Jergenson, Autumn","Tuesday, September 30, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,E. Amaya,176,payroll_detail.csv
+,"Jergenson, Autumn","Tuesday, September 30, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,C. Cox,177,payroll_detail.csv
+,"Jergenson, Autumn",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,178,payroll_detail.csv
+,"Jergenson, Autumn",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,179,payroll_detail.csv
+,"Kendall, Ailidh","Thursday, September 25, 2025",,payroll,appointment,16.0,16.0,0.0,0.0,0.0,0.0,T. Model 1,180,payroll_detail.csv
+,"Kendall, Ailidh",,,payroll,appointment,16.0,16.0,0.0,0.0,0.0,0.0,,181,payroll_detail.csv
+,"Kendall, Ailidh",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,182,payroll_detail.csv
+,"Ketelsen, Teliri","Saturday, October 4, 2025",,payroll,appointment,0.0,3.74,0.0,0.0,0.0,0.0,,183,payroll_detail.csv
+,"Ketelsen, Teliri",,,payroll,appointment,0.0,3.74,0.0,0.0,0.0,0.0,,184,payroll_detail.csv
+,"Ketelsen, Teliri",Commission:,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,185,payroll_detail.csv
+,"Ketelsen, Teliri",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,186,payroll_detail.csv
+,"Kline, Abby","Saturday, October 4, 2025",,payroll,appointment,0.0,3.74,0.0,0.0,0.0,0.0,,187,payroll_detail.csv
+,"Kline, Abby",,,payroll,appointment,0.0,3.74,0.0,0.0,0.0,0.0,,188,payroll_detail.csv
+,"Kline, Abby",Commission:,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,189,payroll_detail.csv
+,"Kline, Abby",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,190,payroll_detail.csv
+,"Kline, Abby","Total for Ketelsen, Teliri",,payroll,appointment,0.0,72.3,0.0,0.0,0.0,0.0,,191,payroll_detail.csv
+,"Kline, Abby","Kline, Abby",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,192,payroll_detail.csv
+,"Kline, Abby",Commission:,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,193,payroll_detail.csv
+,"Kline, Abby",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,194,payroll_detail.csv
+,"Larotonda, Abbey","Saturday, October 4, 2025",,payroll,appointment,0.0,3.74,0.0,0.0,0.0,0.0,,195,payroll_detail.csv
+,"Larotonda, Abbey",,,payroll,appointment,0.0,3.74,0.0,0.0,0.0,0.0,,196,payroll_detail.csv
+,"Larotonda, Abbey",Commission:,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,197,payroll_detail.csv
+,"Larotonda, Abbey",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,198,payroll_detail.csv
+,"Larotonda, Abbey","Total for Ketelsen, Teliri",,payroll,appointment,0.0,72.3,0.0,0.0,0.0,0.0,,199,payroll_detail.csv
+,"Larotonda, Abbey","Kline, Abby",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,200,payroll_detail.csv
+,"Larotonda, Abbey",Commission:,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,201,payroll_detail.csv
+,"Larotonda, Abbey",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,202,payroll_detail.csv
+,"Larotonda, Abbey","Total for Kline, Abby",,payroll,appointment,0.0,40.5,0.0,0.0,0.0,0.0,,203,payroll_detail.csv
+,"Larotonda, Abbey","Larotonda, Abbey",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,204,payroll_detail.csv
+,"Larotonda, Abbey",Tips:,,payroll,appointment,0.0,60.0,0.0,0.0,0.0,0.0,,205,payroll_detail.csv
+,"Larotonda, Abbey",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,206,payroll_detail.csv
+,"Martin, Sarah","Saturday, October 4, 2025",,payroll,appointment,0.0,3.74,0.0,0.0,0.0,0.0,,207,payroll_detail.csv
+,"Martin, Sarah",,,payroll,appointment,0.0,3.74,0.0,0.0,0.0,0.0,,208,payroll_detail.csv
+,"Martin, Sarah",Commission:,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,209,payroll_detail.csv
+,"Martin, Sarah",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,210,payroll_detail.csv
+,"Martin, Sarah","Total for Ketelsen, Teliri",,payroll,appointment,0.0,72.3,0.0,0.0,0.0,0.0,,211,payroll_detail.csv
+,"Martin, Sarah","Kline, Abby",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,212,payroll_detail.csv
+,"Martin, Sarah",Commission:,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,213,payroll_detail.csv
+,"Martin, Sarah",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,214,payroll_detail.csv
+,"Martin, Sarah","Total for Kline, Abby",,payroll,appointment,0.0,40.5,0.0,0.0,0.0,0.0,,215,payroll_detail.csv
+,"Martin, Sarah","Larotonda, Abbey",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,216,payroll_detail.csv
+,"Martin, Sarah",Tips:,,payroll,appointment,0.0,60.0,0.0,0.0,0.0,0.0,,217,payroll_detail.csv
+,"Martin, Sarah",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,218,payroll_detail.csv
+,"Martin, Sarah","Total for Larotonda, Abbey",,payroll,appointment,0.0,60.0,0.0,0.0,0.0,0.0,,219,payroll_detail.csv
+,"Martin, Sarah","Martin, Sarah",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,220,payroll_detail.csv
+,"Martin, Sarah",Commission:,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,221,payroll_detail.csv
+,"Martin, Sarah",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,222,payroll_detail.csv
+,"McCullen, Troy","Saturday, October 4, 2025",,payroll,appointment,0.0,3.74,0.0,0.0,0.0,0.0,,223,payroll_detail.csv
+,"McCullen, Troy",,,payroll,appointment,0.0,3.74,0.0,0.0,0.0,0.0,,224,payroll_detail.csv
+,"McCullen, Troy",Commission:,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,225,payroll_detail.csv
+,"McCullen, Troy",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,226,payroll_detail.csv
+,"McCullen, Troy","Total for Ketelsen, Teliri",,payroll,appointment,0.0,72.3,0.0,0.0,0.0,0.0,,227,payroll_detail.csv
+,"McCullen, Troy","Kline, Abby",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,228,payroll_detail.csv
+,"McCullen, Troy",Commission:,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,229,payroll_detail.csv
+,"McCullen, Troy",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,230,payroll_detail.csv
+,"McCullen, Troy","Total for Kline, Abby",,payroll,appointment,0.0,40.5,0.0,0.0,0.0,0.0,,231,payroll_detail.csv
+,"McCullen, Troy","Larotonda, Abbey",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,232,payroll_detail.csv
+,"McCullen, Troy",Tips:,,payroll,appointment,0.0,60.0,0.0,0.0,0.0,0.0,,233,payroll_detail.csv
+,"McCullen, Troy",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,234,payroll_detail.csv
+,"McCullen, Troy","Total for Larotonda, Abbey",,payroll,appointment,0.0,60.0,0.0,0.0,0.0,0.0,,235,payroll_detail.csv
+,"McCullen, Troy","Martin, Sarah",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,236,payroll_detail.csv
+,"McCullen, Troy",Commission:,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,237,payroll_detail.csv
+,"McCullen, Troy",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,238,payroll_detail.csv
+,"McCullen, Troy","Total for Martin, Sarah",,payroll,appointment,0.0,13.5,0.0,0.0,0.0,0.0,,239,payroll_detail.csv
+,"McCullen, Troy","McCullen, Troy",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,240,payroll_detail.csv
+,"McCullen, Troy",Hourly Pay (0 hours @ $0.00/hr):,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,241,payroll_detail.csv
+,"McCullen, Troy",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,242,payroll_detail.csv
+,"Mccurley, Alyssa","Thursday, October 2, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,C. San miguel,243,payroll_detail.csv
+,"Mccurley, Alyssa",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,244,payroll_detail.csv
+,"Mccurley, Alyssa",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,245,payroll_detail.csv
+,"McGraw, Linda","Thursday, October 2, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,C. San miguel,246,payroll_detail.csv
+,"McGraw, Linda",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,247,payroll_detail.csv
+,"McGraw, Linda",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,248,payroll_detail.csv
+,"McGraw, Linda","Total for Mccurley, Alyssa",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,249,payroll_detail.csv
+,"McGraw, Linda","McGraw, Linda",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,250,payroll_detail.csv
+,"McGraw, Linda",Hourly Pay (0.0178 hours @ $0.00/hr):,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,251,payroll_detail.csv
+,"McGraw, Linda",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,252,payroll_detail.csv
+,"Montes, Fernanda","Thursday, October 2, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,C. San miguel,253,payroll_detail.csv
+,"Montes, Fernanda",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,254,payroll_detail.csv
+,"Montes, Fernanda",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,255,payroll_detail.csv
+,"Montes, Fernanda","Total for Mccurley, Alyssa",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,256,payroll_detail.csv
+,"Montes, Fernanda","McGraw, Linda",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,257,payroll_detail.csv
+,"Montes, Fernanda",Hourly Pay (0.0178 hours @ $0.00/hr):,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,258,payroll_detail.csv
+,"Montes, Fernanda",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,259,payroll_detail.csv
+,"Montes, Fernanda","Total for McGraw, Linda",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,260,payroll_detail.csv
+,"Montes, Fernanda","Montes, Fernanda",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,261,payroll_detail.csv
+,"Montes, Fernanda",Chair Massage - Outcalls Hourly Pay (0.0028 hours @ $0.00/hr):,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,262,payroll_detail.csv
+,"Montes, Fernanda",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,263,payroll_detail.csv
+,"Moore, Adia","Thursday, October 2, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,C. San miguel,264,payroll_detail.csv
+,"Moore, Adia",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,265,payroll_detail.csv
+,"Moore, Adia",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,266,payroll_detail.csv
+,"Moore, Adia","Total for Mccurley, Alyssa",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,267,payroll_detail.csv
+,"Moore, Adia","McGraw, Linda",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,268,payroll_detail.csv
+,"Moore, Adia",Hourly Pay (0.0178 hours @ $0.00/hr):,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,269,payroll_detail.csv
+,"Moore, Adia",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,270,payroll_detail.csv
+,"Moore, Adia","Total for McGraw, Linda",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,271,payroll_detail.csv
+,"Moore, Adia","Montes, Fernanda",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,272,payroll_detail.csv
+,"Moore, Adia",Chair Massage - Outcalls Hourly Pay (0.0028 hours @ $0.00/hr):,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,273,payroll_detail.csv
+,"Moore, Adia",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,274,payroll_detail.csv
+,"Moore, Adia","Total for Montes, Fernanda",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,275,payroll_detail.csv
+,"Moore, Adia","Moore, Adia",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,276,payroll_detail.csv
+,"Moore, Adia",Hourly Pay (0 hours @ $0.00/hr):,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,277,payroll_detail.csv
+,"Moore, Adia",Tips:,,payroll,appointment,0.0,40.0,0.0,0.0,0.0,0.0,,278,payroll_detail.csv
+,"Moore, Adia",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,279,payroll_detail.csv
+,"Newsome, Briana","Thursday, September 25, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,M. Test,280,payroll_detail.csv
+,"Newsome, Briana",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,281,payroll_detail.csv
+,"Newsome, Briana",Tips:,,payroll,appointment,0.0,30.0,0.0,0.0,0.0,0.0,,282,payroll_detail.csv
+,"Newsome, Briana",Commission:,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,283,payroll_detail.csv
+,"Newsome, Briana",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,284,payroll_detail.csv
+,"Perez, Diana","Wednesday, October 1, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,J. Trapasso,285,payroll_detail.csv
+,"Perez, Diana",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,286,payroll_detail.csv
+,"Perez, Diana",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,287,payroll_detail.csv
+,"Phillips, Antoinette","Monday, September 29, 2025",,payroll,appointment,11.0,11.0,0.0,0.0,0.0,0.0,J. Garza,288,payroll_detail.csv
+,"Phillips, Antoinette",,,payroll,appointment,11.0,11.0,0.0,0.0,0.0,0.0,,289,payroll_detail.csv
+,"Phillips, Antoinette",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,290,payroll_detail.csv
+,"Pilgrim, Lena","Monday, September 29, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,L. Tehven,291,payroll_detail.csv
+,"Pilgrim, Lena",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,292,payroll_detail.csv
+,"Pilgrim, Lena",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,293,payroll_detail.csv
+,"Powell, Micaela","Saturday, October 4, 2025",,payroll,appointment,0.0,5.75,0.0,0.0,0.0,0.0,,294,payroll_detail.csv
+,"Powell, Micaela",,,payroll,appointment,0.0,5.75,0.0,0.0,0.0,0.0,,295,payroll_detail.csv
+,"Powell, Micaela",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,296,payroll_detail.csv
+,"Reed, Aurora (Master Lash Artist)","Wednesday, September 24, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,T. MB Testing,297,payroll_detail.csv
+,"Reed, Aurora (Master Lash Artist)",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,298,payroll_detail.csv
+,"Reed, Aurora (Master Lash Artist)",Tips:,,payroll,appointment,0.0,62.5,0.0,0.0,0.0,0.0,,299,payroll_detail.csv
+,"Reed, Aurora (Master Lash Artist)",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,300,payroll_detail.csv
+,"Richardson, Ray","Friday, October 3, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,E. Yellen,301,payroll_detail.csv
+,"Richardson, Ray",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,302,payroll_detail.csv
+,"Richardson, Ray",Chair Massage - Outcalls Hourly Pay (0 hours @ $11.00/hr):,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,303,payroll_detail.csv
+,"Richardson, Ray",Tips:,,payroll,appointment,0.0,13.5,0.0,0.0,0.0,0.0,,304,payroll_detail.csv
+,"Richardson, Ray",Commission:,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,305,payroll_detail.csv
+,"Richardson, Ray",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,306,payroll_detail.csv
+,"Rodriguez, Cassidy","Wednesday, October 1, 2025",,payroll,appointment,0.0,24.0,0.0,0.0,0.0,0.0,,307,payroll_detail.csv
+,"Rodriguez, Cassidy",,,payroll,appointment,0.0,24.0,0.0,0.0,0.0,0.0,,308,payroll_detail.csv
+,"Rodriguez, Cassidy",Commission:,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,309,payroll_detail.csv
+,"Rodriguez, Cassidy",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,310,payroll_detail.csv
+,"Rouse, Regan","Wednesday, October 1, 2025",,payroll,appointment,0.0,24.0,0.0,0.0,0.0,0.0,,311,payroll_detail.csv
+,"Rouse, Regan",,,payroll,appointment,0.0,24.0,0.0,0.0,0.0,0.0,,312,payroll_detail.csv
+,"Rouse, Regan",Commission:,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,313,payroll_detail.csv
+,"Rouse, Regan",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,314,payroll_detail.csv
+,"Rouse, Regan","Total for Rodriguez, Cassidy",,payroll,appointment,0.0,24.0,0.0,0.0,0.0,0.0,,315,payroll_detail.csv
+,"Rouse, Regan","Rouse, Regan",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,316,payroll_detail.csv
+,"Rouse, Regan",Hourly Pay (36.39 hours @ $0.00/hr):,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,317,payroll_detail.csv
+,"Rouse, Regan",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,318,payroll_detail.csv
+,"Samaniego, Amber","Monday, September 29, 2025",,payroll,appointment,0.0,96.0,0.0,0.0,0.0,0.0,,319,payroll_detail.csv
+,"Samaniego, Amber",,,payroll,appointment,0.0,96.0,0.0,0.0,0.0,0.0,,320,payroll_detail.csv
+,"Samaniego, Amber",Tips:,,payroll,appointment,0.0,36.0,0.0,0.0,0.0,0.0,,321,payroll_detail.csv
+,"Samaniego, Amber",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,322,payroll_detail.csv
+,"Setty, Abhi","Monday, September 29, 2025",,payroll,appointment,0.0,96.0,0.0,0.0,0.0,0.0,,323,payroll_detail.csv
+,"Setty, Abhi",,,payroll,appointment,0.0,96.0,0.0,0.0,0.0,0.0,,324,payroll_detail.csv
+,"Setty, Abhi",Tips:,,payroll,appointment,0.0,36.0,0.0,0.0,0.0,0.0,,325,payroll_detail.csv
+,"Setty, Abhi",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,326,payroll_detail.csv
+,"Setty, Abhi","Total for Samaniego, Amber",,payroll,appointment,0.0,296.0,0.0,0.0,0.0,0.0,,327,payroll_detail.csv
+,"Setty, Abhi","Setty, Abhi",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,328,payroll_detail.csv
+,"Setty, Abhi",Training Hourly Pay (0 hours @ $0.00/hr):,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,329,payroll_detail.csv
+,"Setty, Abhi",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,330,payroll_detail.csv
+,"Staff, Test","Monday, September 22, 2025",,payroll,appointment,0.0,47.5,0.0,0.0,0.0,0.0,,331,payroll_detail.csv
+,"Staff, Test",,,payroll,appointment,0.0,47.5,0.0,0.0,0.0,0.0,,332,payroll_detail.csv
+,"Staff, Test",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,333,payroll_detail.csv
+,"Test, AK","Monday, September 22, 2025",,payroll,appointment,0.0,47.5,0.0,0.0,0.0,0.0,,334,payroll_detail.csv
+,"Test, AK",,,payroll,appointment,0.0,47.5,0.0,0.0,0.0,0.0,,335,payroll_detail.csv
+,"Test, AK",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,336,payroll_detail.csv
+,"Test, AK","Total for Staff, Test",,payroll,appointment,0.0,47.5,0.0,0.0,0.0,0.0,,337,payroll_detail.csv
+,"Test, AK","Test, AK",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,338,payroll_detail.csv
+,"Test, AK",Tips:,,payroll,appointment,0.0,100.0,0.0,0.0,0.0,0.0,,339,payroll_detail.csv
+,"Test, AK",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,340,payroll_detail.csv
+,"Trujillo, Mariah","Monday, September 22, 2025",,payroll,appointment,0.0,47.5,0.0,0.0,0.0,0.0,,341,payroll_detail.csv
+,"Trujillo, Mariah",,,payroll,appointment,0.0,47.5,0.0,0.0,0.0,0.0,,342,payroll_detail.csv
+,"Trujillo, Mariah",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,343,payroll_detail.csv
+,"Trujillo, Mariah","Total for Staff, Test",,payroll,appointment,0.0,47.5,0.0,0.0,0.0,0.0,,344,payroll_detail.csv
+,"Trujillo, Mariah","Test, AK",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,345,payroll_detail.csv
+,"Trujillo, Mariah",Tips:,,payroll,appointment,0.0,100.0,0.0,0.0,0.0,0.0,,346,payroll_detail.csv
+,"Trujillo, Mariah",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,347,payroll_detail.csv
+,"Trujillo, Mariah","Total for Test, AK",,payroll,appointment,0.0,100.0,0.0,0.0,0.0,0.0,,348,payroll_detail.csv
+,"Trujillo, Mariah","Trujillo, Mariah",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,349,payroll_detail.csv
+,"Trujillo, Mariah",Tips:,,payroll,appointment,0.0,25.0,0.0,0.0,0.0,0.0,,350,payroll_detail.csv
+,"Trujillo, Mariah",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,351,payroll_detail.csv
+,"Villanueva, Angelika","Friday, October 3, 2025",,payroll,appointment,50.0,50.0,0.0,0.0,0.0,0.0,T. Testing & T. Testing & T. Testing & T. Testing,352,payroll_detail.csv
+,"Villanueva, Angelika",,,payroll,appointment,50.0,50.0,0.0,0.0,0.0,0.0,,353,payroll_detail.csv
+,"Villanueva, Angelika",Tips:,,payroll,appointment,0.0,18.0,0.0,0.0,0.0,0.0,,354,payroll_detail.csv
+,"Villanueva, Angelika",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,355,payroll_detail.csv
+,"Walker, Jessica","Saturday, September 27, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,K. Client,356,payroll_detail.csv
+,"Walker, Jessica",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,357,payroll_detail.csv
+,"Walker, Jessica",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,358,payroll_detail.csv
+,"Wilson, Dru","Friday, October 3, 2025",,payroll,appointment,15.0,15.0,0.0,0.0,0.0,0.0,J. Trapasso,359,payroll_detail.csv
+,"Wilson, Dru",,,payroll,appointment,15.0,15.0,0.0,0.0,0.0,0.0,,360,payroll_detail.csv
+,"Wilson, Dru",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,361,payroll_detail.csv
+,"Yellen, Erika","Thursday, September 25, 2025",,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,D. Marchese,362,payroll_detail.csv
+,"Yellen, Erika",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,363,payroll_detail.csv
+,"Yellen, Erika",,,payroll,appointment,0.0,0.0,0.0,0.0,0.0,0.0,,364,payroll_detail.csv
+100000211,Teliri,9/23/2025,,commission,commission,135.0,0.0,0.0877,22.27,0.0,0.0,Classic Member Benefits | 1 Full Set or 2 Refills,0,commission_detail.csv
+100000085,Teliri,9/29/2025,,commission,commission,135.0,0.0,0.0877,22.27,0.0,0.0,Classic Member Benefits | 1 Full Set or 2 Refills,1,commission_detail.csv
+100000085,Teliri,9/29/2025,,commission,commission,27.0,0.0,0.0175,1.75,0.0,0.0,Deka Lash Lash Cleanse 50ml,2,commission_detail.csv
+8738401,Teliri,9/30/2025,,commission,commission,135.0,0.0,0.0877,22.27,0.0,0.0,Classic Member Benefits | 1 Full Set or 2 Refills,3,commission_detail.csv
+,Teliri,Total:,,commission,commission,432.0,0.0,0.0,68.56,0.0,0.0,,4,commission_detail.csv
+,Teliri,Rena,,commission,commission,0.0,0.0,0.0,0.0,0.0,0.0,,5,commission_detail.csv
+11324608,Rena,9/30/2025,,commission,commission,18.0,0.0,0.016200000000000003,1.62,0.0,0.0,Deka Lash Clear Brow Gel,6,commission_detail.csv
+,Rena,Total:,,commission,commission,18.0,0.0,0.0,1.62,0.0,0.0,,7,commission_detail.csv
+,Rena,Cassidy,,commission,commission,0.0,0.0,0.0,0.0,0.0,0.0,,8,commission_detail.csv
+100000123,Cassidy,9/24/2025,,commission,commission,0.0,0.0,0.0,0.0,0.0,0.0,Classic Member Benefits | 1 Full Set or 2 Refills,9,commission_detail.csv
+,Cassidy,Total:,,commission,commission,0.0,0.0,0.0,0.0,0.0,0.0,,10,commission_detail.csv
+,Cassidy,Abby,,commission,commission,0.0,0.0,0.0,0.0,0.0,0.0,,11,commission_detail.csv
+100000194,Abby,9/24/2025,,commission,commission,135.0,0.0,0.0,13.5,0.0,0.0,Classic Member Benefits | 1 Full Set or 2 Refills,12,commission_detail.csv
+100000149,Abby,9/29/2025,,commission,commission,135.0,0.0,0.0,13.5,0.0,0.0,Classic Member Benefits | 1 Full Set or 2 Refills,13,commission_detail.csv
+100000214,Abby,10/2/2025,,commission,commission,135.0,0.0,0.0,13.5,0.0,0.0,Classic Member Benefits | 1 Full Set or 2 Refills,14,commission_detail.csv
+,Abby,Total:,,commission,commission,405.0,0.0,0.0,40.5,0.0,0.0,,15,commission_detail.csv
+,Abby,Carmen,,commission,commission,0.0,0.0,0.0,0.0,0.0,0.0,,16,commission_detail.csv
+100000123,Carmen,9/24/2025,,commission,commission,0.0,0.0,0.0,0.0,0.0,0.0,Classic Member Benefits | 1 Full Set or 2 Refills,17,commission_detail.csv
+,Carmen,Total:,,commission,commission,0.0,0.0,0.0,0.0,0.0,0.0,,18,commission_detail.csv
+,Carmen,Briana,,commission,commission,0.0,0.0,0.0,0.0,0.0,0.0,,19,commission_detail.csv
+100000222,Briana,9/23/2025,,commission,commission,135.0,0.0,0.0,13.5,0.0,0.0,Classic Member Benefits | 1 Full Set or 2 Refills,20,commission_detail.csv
+,Briana,Total:,,commission,commission,135.0,0.0,0.0,13.5,0.0,0.0,,21,commission_detail.csv
+,Briana,Chhoryna,,commission,commission,0.0,0.0,0.0,0.0,0.0,0.0,,22,commission_detail.csv
+100000225,Chhoryna,9/23/2025,,commission,commission,36.0,0.0,0.0,0.0,0.0,0.0,Deka Lash Essentials Kit,23,commission_detail.csv
+,Chhoryna,Total:,,commission,commission,36.0,0.0,0.0,0.0,0.0,0.0,,24,commission_detail.csv
+,Chhoryna,Ray,,commission,commission,0.0,0.0,0.0,0.0,0.0,0.0,,25,commission_detail.csv
+10556321,Ray,9/29/2025,,commission,commission,135.0,0.0,0.135,27.0,0.0,0.0,Classic Member Benefits | 1 Full Set or 2 Refills,26,commission_detail.csv
+,Ray,Total:,,commission,commission,135.0,0.0,0.0,27.0,0.0,0.0,,27,commission_detail.csv
+,Ray,Sarah,,commission,commission,0.0,0.0,0.0,0.0,0.0,0.0,,28,commission_detail.csv
+100000236,Sarah,9/25/2025,,commission,commission,135.0,0.0,0.0,13.5,0.0,0.0,Classic Member Benefits | 1 Full Set or 2 Refills,29,commission_detail.csv
+,Sarah,Total:,,commission,commission,135.0,0.0,0.0,13.5,0.0,0.0,,30,commission_detail.csv
+,Sarah,Grand total,,commission,commission,0.0,0.0,0.0,164.68,0.0,0.0,,31,commission_detail.csv
