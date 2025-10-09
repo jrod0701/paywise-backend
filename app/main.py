@@ -1,5 +1,5 @@
 from fastapi import FastAPI, File, UploadFile, Form, Depends, HTTPException, Request
-from fastapi.responses import JSONResponse, FileResponse, PlainTextResponse, HTMLResponse
+from fastapi.responses import JSONResponse, FileResponse, PlainTextResponse, HTMLResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from starlette.exceptions import HTTPException as StarletteHTTPException
@@ -26,10 +26,9 @@ app.add_middleware(
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
-@app.get("/", response_class=HTMLResponse)
-def landing():
-    html = Path("static/login.html").read_text(encoding="utf-8")
-    return HTMLResponse(content=html, media_type="text/html")
+@app.get("/", include_in_schema=False)
+def root_redirect():
+    return RedirectResponse(url="/app")
 
 @app.get("/app", response_class=HTMLResponse)
 def app_page():
