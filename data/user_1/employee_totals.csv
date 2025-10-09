@@ -1,75 +1,76 @@
-__emp_label,employee_id,employee_name,payroll_total,commission_total,combined_total
-"Setty, Abhi",,"Setty, Abhi",524.0,0.0,524.0
-"Trujillo, Mariah",,"Trujillo, Mariah",367.5,0.0,367.5
-"McCullen, Troy",,"McCullen, Troy",253.78,0.0,253.78
-"Test, AK",,"Test, AK",242.5,0.0,242.5
-"Martin, Sarah",,"Martin, Sarah",240.28,0.0,240.28
-"Samaniego, Amber",,"Samaniego, Amber",228.0,0.0,228.0
-"Cruz, Carmen",,"Cruz, Carmen",200.0,0.0,200.0
-"Larotonda, Abbey",,"Larotonda, Abbey",180.28,0.0,180.28
-"Counts, Ashley",,"Counts, Ashley",180.0,0.0,180.0
-Sarah,,Sarah,0.0,178.18,178.18
-"Alvarez, Ines",,"Alvarez, Ines",130.0,0.0,130.0
-"Villanueva, Angelika",,"Villanueva, Angelika",118.0,0.0,118.0
-"Collier, Brad",,"Collier, Brad",110.0,0.0,110.0
-"Staff, Test",,"Staff, Test",95.0,0.0,95.0
-"Carey, Cassidy",,"Carey, Cassidy",80.0,0.0,80.0
-"Kline, Abby",,"Kline, Abby",79.78,0.0,79.78
-"Rouse, Regan",,"Rouse, Regan",72.0,0.0,72.0
-Teliri,,Teliri,0.0,68.56,68.56
-"Reed, Aurora (Master Lash Artist)",,"Reed, Aurora (Master Lash Artist)",62.5,0.0,62.5
-"Bush, Jasmine",,"Bush, Jasmine",60.0,0.0,60.0
-"Burke, Chatsiri",,"Burke, Chatsiri",60.0,0.0,60.0
-"Rodriguez, Cassidy",,"Rodriguez, Cassidy",48.0,0.0,48.0
-"Artist #1, Lash",,"Artist #1, Lash",46.0,0.0,46.0
-Abby,,Abby,0.0,40.5,40.5
-"Moore, Adia",,"Moore, Adia",40.0,0.0,40.0
-"Kendall, Ailidh",,"Kendall, Ailidh",32.0,0.0,32.0
-"Breska, Brittany",,"Breska, Brittany",30.0,0.0,30.0
-"Hinkley, Cassie",,"Hinkley, Cassie",30.0,0.0,30.0
-"Wilson, Dru",,"Wilson, Dru",30.0,0.0,30.0
-"Newsome, Briana",,"Newsome, Briana",30.0,0.0,30.0
-"Collier, Alisha",,"Collier, Alisha",30.0,0.0,30.0
-Ray,10556321,Ray,0.0,27.0,27.0
-Ray,,Ray,0.0,27.0,27.0
-Teliri,100000085,Teliri,0.0,24.02,24.02
-Teliri,8738401,Teliri,0.0,22.27,22.27
-Teliri,100000211,Teliri,0.0,22.27,22.27
-"Phillips, Antoinette",,"Phillips, Antoinette",22.0,0.0,22.0
-Sarah,100000236,Sarah,0.0,13.5,13.5
-Briana,,Briana,0.0,13.5,13.5
-Briana,100000222,Briana,0.0,13.5,13.5
-Abby,100000214,Abby,0.0,13.5,13.5
-Abby,100000194,Abby,0.0,13.5,13.5
-Abby,100000149,Abby,0.0,13.5,13.5
-"Richardson, Ray",,"Richardson, Ray",13.5,0.0,13.5
-"Powell, Micaela",,"Powell, Micaela",11.5,0.0,11.5
-"Astley-Davis, Abbey",,"Astley-Davis, Abbey",10.0,0.0,10.0
-"Ketelsen, Teliri",,"Ketelsen, Teliri",7.48,0.0,7.48
-"Fox, Alissa",,"Fox, Alissa",6.4,0.0,6.4
-Rena,,Rena,0.0,1.62,1.62
-Rena,11324608,Rena,0.0,1.62,1.62
-"Walker, Jessica",,"Walker, Jessica",0.0,0.0,0.0
-"1, Lash Artist",,"1, Lash Artist",0.0,0.0,0.0
-"Pilgrim, Lena",,"Pilgrim, Lena",0.0,0.0,0.0
-"Perez, Diana",,"Perez, Diana",0.0,0.0,0.0
-"Artist #2, Lash",,"Artist #2, Lash",0.0,0.0,0.0
-Carmen,,Carmen,0.0,0.0,0.0
-Carmen,100000123,Carmen,0.0,0.0,0.0
-Cassidy,,Cassidy,0.0,0.0,0.0
-Cassidy,100000123,Cassidy,0.0,0.0,0.0
-"Chhon, Chhoryna",,"Chhon, Chhoryna",0.0,0.0,0.0
-Chhoryna,,Chhoryna,0.0,0.0,0.0
-Chhoryna,100000225,Chhoryna,0.0,0.0,0.0
-"Chu, Cait",,"Chu, Cait",0.0,0.0,0.0
-"Darby, Elizabeth",,"Darby, Elizabeth",0.0,0.0,0.0
-"Dettman, Libby (MLA)",,"Dettman, Libby (MLA)",0.0,0.0,0.0
-"Ellis, Emma",,"Ellis, Emma",0.0,0.0,0.0
-"Gilmore, Tae",,"Gilmore, Tae",0.0,0.0,0.0
-"Green, Genevieve",,"Green, Genevieve",0.0,0.0,0.0
-"Hernandez, Rena",,"Hernandez, Rena",0.0,0.0,0.0
-"Jergenson, Autumn",,"Jergenson, Autumn",0.0,0.0,0.0
-"McGraw, Linda",,"McGraw, Linda",0.0,0.0,0.0
-"Mccurley, Alyssa",,"Mccurley, Alyssa",0.0,0.0,0.0
-"Montes, Fernanda",,"Montes, Fernanda",0.0,0.0,0.0
-"Yellen, Erika",,"Yellen, Erika",0.0,0.0,0.0
+employee_id,employee_name,payroll_total,commission_total,combined_total
+0,Abby,0.0,0.0,0.0
+0,Allison MBO (Test),0.0,135.0,135.0
+0,Briana,0.0,0.0,0.0
+0,Carmen,0.0,0.0,0.0
+0,Cassidy,0.0,0.0,0.0
+0,Chhoryna,0.0,0.0,0.0
+0,Christina Cox,0.0,135.0,135.0
+0,Client,0.0,0.0,0.0
+0,Erika Yellen,0.0,135.0,135.0
+0,Julie Becerril,0.0,135.0,135.0
+0,Lexi Tehven,0.0,162.0,162.0
+0,New Client Pricing TEST,0.0,135.0,135.0
+0,New client USR,0.0,135.0,135.0
+0,Ray,0.0,0.0,0.0
+0,Rebecca Wilson,0.0,36.0,36.0
+0,Regan Rouse,0.0,18.0,18.0
+0,Rena,0.0,0.0,0.0
+0,Sarah,0.0,0.0,0.0
+0,Sue Gardner,0.0,135.0,135.0
+0,Ted FM Test,0.0,0.0,0.0
+0,Teliri,0.0,0.0,0.0
+0,Unassigned,0.0,135.0,135.0
+0,nan,0.0,2592.0,2592.0
+,"1, Lash Artist",0.0,0.0,0.0
+,"Alvarez, Ines",30.0,0.0,30.0
+,"Artist #1, Lash",36.0,0.0,36.0
+,"Artist #2, Lash",0.0,0.0,0.0
+,"Astley-Davis, Abbey",30.0,0.0,30.0
+,"Breska, Brittany",30.0,0.0,30.0
+,"Burke, Chatsiri",0.0,0.0,0.0
+,"Bush, Jasmine",0.0,0.0,0.0
+,"Carey, Cassidy",0.0,0.0,0.0
+,"Chhon, Chhoryna",0.0,0.0,0.0
+,"Chu, Cait",0.0,0.0,0.0
+,"Collier, Alisha",0.0,0.0,0.0
+,"Collier, Brad",0.0,0.0,0.0
+,"Counts, Ashley",0.0,0.0,0.0
+,"Cruz, Carmen",0.0,0.0,0.0
+,"Darby, Elizabeth",0.0,0.0,0.0
+,"Dettman, Libby (MLA)",0.0,0.0,0.0
+,"Ellis, Emma",0.0,0.0,0.0
+,"Fox, Alissa",0.0,0.0,0.0
+,"Gilmore, Tae",0.0,0.0,0.0
+,"Green, Genevieve",0.0,0.0,0.0
+,"Hernandez, Rena",30.0,0.0,30.0
+,"Hinkley, Cassie",30.0,0.0,30.0
+,"Jergenson, Autumn",0.0,0.0,0.0
+,"Kendall, Ailidh",32.0,0.0,32.0
+,"Ketelsen, Teliri",7.48,0.0,7.48
+,"Kline, Abby",0.0,0.0,0.0
+,"Larotonda, Abbey",0.0,0.0,0.0
+,"Martin, Sarah",0.0,0.0,0.0
+,"McCullen, Troy",0.0,0.0,0.0
+,"McGraw, Linda",0.0,0.0,0.0
+,"Mccurley, Alyssa",0.0,0.0,0.0
+,"Montes, Fernanda",0.0,0.0,0.0
+,"Moore, Adia",0.0,0.0,0.0
+,"Newsome, Briana",0.0,0.0,0.0
+,"Perez, Diana",0.0,0.0,0.0
+,"Phillips, Antoinette",22.0,0.0,22.0
+,"Pilgrim, Lena",0.0,0.0,0.0
+,"Powell, Micaela",11.5,0.0,11.5
+,"Reed, Aurora (Master Lash Artist)",27.0,0.0,27.0
+,"Richardson, Ray",0.0,0.0,0.0
+,"Rodriguez, Cassidy",48.0,0.0,48.0
+,"Rouse, Regan",144.0,0.0,144.0
+,"Samaniego, Amber",144.0,0.0,144.0
+,"Setty, Abhi",95.0,0.0,95.0
+,"Staff, Test",95.0,0.0,95.0
+,"Test, AK",50.0,0.0,50.0
+,"Trujillo, Mariah",50.0,0.0,50.0
+,"Villanueva, Angelika",50.0,0.0,50.0
+,"Walker, Jessica",0.0,0.0,0.0
+,"Wilson, Dru",30.0,0.0,30.0
+,"Yellen, Erika",0.0,0.0,0.0

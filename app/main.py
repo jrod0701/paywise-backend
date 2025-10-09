@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from .db import init_db
-from .deps import get_current_user, require_active_subscription
+from .deps import get_current_user, get_current_user_optional, require_active_subscription
 from . import auth, billing, logic
 import pandas as pd
 
@@ -60,6 +60,11 @@ async def ingest(
     location: str = Form(""),
     user=Depends(require_active_subscription)
 ):
+    # Enforce Mindbody native .xls uploads only
+    if not (payroll.filename or "").lower().endswith(".xls"):
+        raise HTTPException(status_code=400, detail="Upload Mindbody Payroll Detail as .xls")
+    if not (commission.filename or "").lower().endswith(".xls"):
+        raise HTTPException(status_code=400, detail="Upload Mindbody Commission Detail as .xls")
     p_bytes = await payroll.read()
     c_bytes = await commission.read()
 
@@ -98,9 +103,14 @@ async def ingest(
     })
 
 @app.get("/download/{user_id}/{name}")
-async def download(user_id: int, name: str, user=Depends(get_current_user)):
-    if user.id != user_id:
-        raise HTTPException(status_code=403, detail="Forbidden")
+async def download(user_id: str, name: str, user=Depends(get_current_user_optional)):
+    # Allow if logged-in user matches, or anonymous/public bucket
+    if user is not None:
+        if str(user.id) != str(user_id):
+            raise HTTPException(status_code=403, detail="Forbidden")
+    else:
+        if str(user_id) != "public":
+            raise HTTPException(status_code=403, detail="Forbidden")
     path = OUT_DIR / f"user_{user_id}" / name
     if not path.exists():
         return JSONResponse({"error":"not found"}, status_code=404)

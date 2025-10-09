@@ -7,8 +7,10 @@ from sqlalchemy.orm import Session
 from .db import get_db
 from .models import User
 import os, jwt
+from types import SimpleNamespace
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/auth/login")
+oauth2_scheme_optional = OAuth2PasswordBearer(tokenUrl="/auth/login", auto_error=False)
 JWT_SECRET = os.getenv("JWT_SECRET", "devsecret")
 DEV_ALLOW_ALL = os.getenv("DEV_ALLOW_ALL", "false").lower() == "true"
 TEST_EMAIL = (os.getenv("TEST_EMAIL") or "").strip().lower()
@@ -24,9 +26,21 @@ def get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(
     except Exception:
         raise HTTPException(status_code=401, detail="Invalid token")
 
-def require_active_subscription(user: User = Depends(get_current_user)) -> User:
-    if DEV_ALLOW_ALL or (TEST_EMAIL and user.email.lower() == TEST_EMAIL):
+def get_current_user_optional(token: str | None = Depends(oauth2_scheme_optional), db: Session = Depends(get_db)) -> User | None:
+    """Returns the current user if a valid token is provided; otherwise None (no error)."""
+    if not token:
+        return None
+    try:
+        payload = jwt.decode(token, JWT_SECRET, algorithms=["HS256"])
+        uid = int(payload.get("sub"))
+        user = db.query(User).get(uid)
         return user
-    if user.subscription_status != "active":
-        raise HTTPException(status_code=402, detail="Subscription required")
-    return user
+    except Exception:
+        return None
+
+def require_active_subscription(user: User | None = Depends(get_current_user_optional)) -> User | SimpleNamespace:
+    """Subscription disabled: allow all users (including anonymous)."""
+    if user is not None:
+        return user
+    # anonymous placeholder with stable id for per-user output dirs
+    return SimpleNamespace(id="public")

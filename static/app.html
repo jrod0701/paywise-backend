@@ -23,14 +23,6 @@
 
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
       <div class="lg:col-span-1 space-y-6">
-        <section class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-          <h3 class="font-semibold">Subscription</h3>
-          <div class="flex gap-2 mt-2">
-            <button id="checkStatus" class="px-3 py-2 text-sm rounded-xl bg-slate-900 text-white">Check</button>
-            <button id="startSub" class="px-3 py-2 text-sm rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white">Subscribe</button>
-            <span id="subStatus" class="text-sm text-slate-500 self-center">Not checked.</span>
-          </div>
-        </section>
       </div>
 
       <div class="lg:col-span-2 space-y-6">
@@ -45,12 +37,12 @@
                 <input name="location" placeholder="e.g., Studio 14" class="mt-1 w-full rounded-xl border border-slate-300 bg-white px-3 py-2">
               </div>
               <div>
-                <label class="text-xs text-slate-500">Payroll Detail (.xls/.xlsx/.csv)</label>
-                <input name="payroll" type="file" accept=".xls,.xlsx,.csv" required class="mt-1 w-full rounded-xl border border-slate-300 bg-white px-3 py-2">
+                <label class="text-xs text-slate-500">Payroll Detail (.xls)</label>
+                <input name="payroll" type="file" accept=".xls" required class="mt-1 w-full rounded-xl border border-slate-300 bg-white px-3 py-2">
               </div>
               <div>
-                <label class="text-xs text-slate-500">Commission Detail (.xls/.xlsx/.csv)</label>
-                <input name="commission" type="file" accept=".xls,.xlsx,.csv" required class="mt-1 w-full rounded-xl border border-slate-300 bg-white px-3 py-2">
+                <label class="text-xs text-slate-500">Commission Detail (.xls)</label>
+                <input name="commission" type="file" accept=".xls" required class="mt-1 w-full rounded-xl border border-slate-300 bg-white px-3 py-2">
               </div>
             </div>
             <div class="flex items-center gap-3">
@@ -70,20 +62,8 @@ let token = localStorage.getItem('token') || '';
 const fmt = new Intl.NumberFormat(undefined, { style:'currency', currency:'USD' });
 function $(sel){ return document.querySelector(sel); }
 function el(html){ const t=document.createElement('template'); t.innerHTML=html.trim(); return t.content.firstChild; }
-function setSubStatus(msg){ $('#subStatus').textContent = msg; }
 
 $('#logout').addEventListener('click', ()=>{ localStorage.removeItem('token'); location.href='/'; });
-$('#checkStatus').addEventListener('click', async ()=>{
-  const res = await fetch('/billing/status', {headers:{'Authorization':'Bearer '+token}});
-  const data = await res.json();
-  setSubStatus(res.ok ? 'Subscription: '+data.subscription_status : 'Not authorized / not logged in.');
-});
-$('#startSub').addEventListener('click', async ()=>{
-  const res = await fetch('/billing/create-checkout-session', {method:'POST', headers:{'Authorization':'Bearer '+token}});
-  const data = await res.json();
-  if(res.ok && data.checkout_url) window.location = data.checkout_url;
-  else alert(data.detail || 'Stripe not configured.');
-});
 $('#ingestForm').addEventListener('submit', async (e)=>{
   e.preventDefault();
   const fd = new FormData(e.target);
